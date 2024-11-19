@@ -1,0 +1,82 @@
+body {
+  margin: 2rem
+}
+
+/* CSS w/o nesting */
+/* .card {
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  max-width: 300px;
+}
+
+.card .card-header {
+  font-weight: bold;
+}
+
+.card .card-header:hover {
+  color: red;
+}
+
+.card .card-header .icon {
+  margin-right: 5px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card button:focus {
+  outline: 3px solid #0056b3;
+} */
+
+/* CSS w/ nesting */
+.card {
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  max-width: 300px;
+
+  & .card-header {
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+    }
+
+    & .icon {
+      margin-right: 5px;
+    }
+  }
+
+  & p {
+    font-size: 14px;
+    color: red;
+  }
+
+  & button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:focus {
+      outline: 3px solid #0056b3;
+    }
+  }
+}

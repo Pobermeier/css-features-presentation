@@ -1,0 +1,47 @@
+body {
+  margin: 2rem;
+}
+
+.demo {
+  .heading-1 {
+    color: red;
+  }
+
+  /* Using :is() to style multiple heading levels in one go */
+  :is(h1, h2, .heading-2) {
+    color: blue;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Adding :is() with pseudo-classes */
+  :is(button, a):hover {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  article {
+    background-color: white
+  }
+
+  /* Using :where() for margin without adding specificity */
+  :is(article, section) {
+    padding: 2rem;
+    background-color: beige;
+  }
+
+  .card {
+    border: 1px solid black;
+  }
+
+  /* Use :has() to style a card only if it contains an img */
+  .card:has(img) {
+    border: 2px solid green;
+    padding: 10px;
+    background-color: beige;
+
+    img {
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS focus-visible Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+  <h2>2. <code>:focus-visible</code></h2>
+  <ul>
+    <li>Focus styles highlight an interactive element (like a button, link, or input) when it's "in focus."</li>
+    <li>Typically triggered by:
+      <ul>
+        <li>Mouse click</li>
+        <li>Keyboard navigation (usually by pressing the Tab key)</li>
+      </ul>
+    </li>
+    <li>Focus styles are essential for accessibility, especially for keyboard users.</li>
+  </ul>
+
+  <hr>
+  
+  <h3>Regular Focus</h3>
+  <ul>
+    <li>The <code>:focus</code> pseudo-class applies whenever an element gains focus, whether by mouse, keyboard, or touch.</li>
+    <li><strong>Issue:</strong> This can result in unwanted focus outlines when users interact with elements using a mouse or touch, which often isn't necessary.</li>
+  </ul>
+  <p>
+    When clicking this button, the focus outline appears even if the user is using a mouse.
+  </p>
+  <button onclick="alert('Regular Focus-Button clicked!')" class="button-primary button-focus">Button Focus</button>
+  
+  <hr>
+
+  <h3>Focus-visible</h3>
+  <ul>
+    <li>The <code>:focus-visible</code> pseudo-class is a more refined approach introduced in the <strong>CSS Pseudo-Classes Level 4</strong>.</li>
+    <li><strong>Purpose:</strong> It applies focus styles only when it is appropriate, typically when the user is navigating via keyboard or other non-pointer inputs.</li>
+    <li><strong>Key Benefit:</strong> Mouse users won’t see focus outlines when clicking, while keyboard users still benefit from clear focus indicators.</li>
+  </ul>
+  <button onclick="alert('Focus-visible Button clicked!')" class="button-primary button-focus-visible">Button Focus-visible</button>
+  <hr>
+  <h4>Further reading:</h4>
+  <a href="https://caniuse.com/mdn-css_selectors_focus-visible" target="_blank">Can I Use</a>
+  <br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" target="_blank">MDN</a>
+</body>
+</html>

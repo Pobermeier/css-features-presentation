@@ -1,0 +1,25 @@
+body {
+  margin: 2rem
+}
+
+.example {
+  width: 200px; /* Narrow container to force wrapping */
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.example-2 {
+  width: 500px; /* Narrow container to force wrapping */
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* Default text wrapping */
+/* h2, p {
+  text-wrap: normal; 
+} */
+
+/* Balanced wrapping */
+h2, p {
+  text-wrap: balance; 
+}

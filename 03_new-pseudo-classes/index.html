@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS New Pseudo Classes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<h2>3. <code>:is()</code>, <code>:where()</code> &amp; <code>:has()</code></h2>
+
+  <p>
+    <code>:is()</code>, <code>:where()</code>, and <code>:has()</code> are new pseudo-classes that make selecting elements based on certain conditions easier, without the need for verbose or redundant selectors.
+  </p>
+
+  <hr>
+
+  <div class="demo">
+    <article>
+      <h1 class="heading-1">Article Heading</h1>
+      <p>This is some text inside an article.</p>
+      <a href="http://www.xxxlutz.at" target="_blank" rel="noopener noreferrer">Link</a>
+    </article>
+
+    <hr>
+
+    <section>
+      <h2>Section Heading</h2>
+      <p>This is a section paragraph.</p>
+      <button>Test</button>
+    </section>
+
+    <hr>
+  
+    <div class="card">
+      <h3 class="heading-3">Card Header</h3>
+      <p>Card body content.</p>
+    </div>
+
+    <hr>
+  
+    <div class="card with-image">
+      <img src="https://assets.fontsinuse.com/use-media/35501/upto-700xauto/5b6b47f8/1/jpeg/cat9.jpeg" alt="Example image">
+      <p>Card with an image.</p>
+    </div>
+  </div>
+
+  <hr>
+  <h4>Further reading:</h4>
+  <a href="https://caniuse.com/css-has" target="_blank">Can I Use :has()</a>
+  <a href="https://caniuse.com/css-matches-pseudo" target="_blank">Can I Use :is()</a>
+  <a href="https://caniuse.com/mdn-css_selectors_where" target="_blank">Can I Use :where()</a>
+  <br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#functional_pseudo-classes" target="_blank">MDN</a>
+</body>
+</html>
